@@ -1,10 +1,11 @@
+
 #include "lib.h"
-float massimo (float max[], int n, float m){
-    for(int i=0; i<n; i++){
-        if(i==0){
-            m=max[i];
-        }else if( i>0 & max[i]>m){
-            m=max[i];
+
+float maggiore(int dim, float lista[]){
+    float m = lista [0];
+    for(int i=0; i < dim ; i++){
+        if( lista[i] >= m ){
+            m = lista[i];
         }
     }
     return m;
